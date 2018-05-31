@@ -26,5 +26,14 @@ public class HomeController {
         LOG.log(Level.INFO, "Start " + TemplatesConstants.HOME + "...");
         return TemplatesConstants.HOME;
     }
+    
+    
+    
+        @GetMapping("/")
+    public String redirectHome() {
+        LOG.log(Level.INFO, "Start " + TemplatesConstants.HOME + "...");
+        return TemplatesConstants.HOME;
+    }
+    
 
 }
