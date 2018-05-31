@@ -18424,7 +18424,7 @@ input:focus {
   font-size: 1.125rem;
   line-height: 1;
   margin-left: auto;
-  color: #bba8bff5;
+  color: #000000;
 }
 
 .rtl .sidebar .nav .nav-item .nav-link i.menu-icon {
@@ -18465,7 +18465,7 @@ input:focus {
 }
 
 .sidebar .nav .nav-item .nav-link .menu-title {
-  color: inherit;
+  color: #000000;
   display: inline-block;
   font-size: 0.875rem;
   line-height: 1;
@@ -18624,7 +18624,7 @@ input:focus {
 }
 
 .sidebar-dark .sidebar .nav .nav-item .nav-link i.menu-icon {
-  color: #bba8bff5;
+  color: #000000;
 }
 
 .sidebar-dark .sidebar .nav .nav-item .nav-link i.menu-arrow {
@@ -18636,7 +18636,7 @@ input:focus {
 }
 
 .sidebar-dark .sidebar .nav .nav-item .nav-link .menu-title {
-  color: inherit;
+  color: #000000;
 }
 
 .sidebar-dark .sidebar .nav .nav-item.active {
