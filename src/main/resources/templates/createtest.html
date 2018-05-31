@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html xmlns:th="http://www.thymeleaf.org">
+<html>
     <head>
         <!-- Start Resoruces Minimal-->
         <title>Home</title>
@@ -15,15 +15,36 @@ and open the template in the editor.
         <link href="/resources/css/vendors/css/vendor.bundle.addons.css" rel="stylesheet" type="text/css"/>
         <link href="/resources/css/style/style.css" rel="stylesheet" type="text/css"/>
         <!-- End Resoruces Minimal -->
-
     </head>
     <body>
-        <!-- Start Sidebars To Thymeleaf -->
         <div th:replace="sidebars :: sidebars"></div>
-        <!-- End Sidebars To Thymeleaf -->
 
-        <!-- container-scroller -->
-        <!-- plugins:js -->
+
+        <div class="container-scroller">
+            <div class="container-fluid page-body-wrapper">
+                <div class="main-panel">
+                    <div class="content-wrapper">
+                        <div class="row">
+                            <div class="col-md-4 stretch-card grid-margin">
+                                <div class="card bg-gradient-danger card-img-holder text-white">
+                                    <div class="card-body">
+                                        <img src="images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image"/>
+                                        <h4 class="font-weight-normal mb-3">Weekly Sales
+                                            <i class="mdi mdi-chart-line mdi-24px float-right"></i>
+                                        </h4>
+                                        <h2 class="mb-5">$ 15,0000</h2>
+                                        <h6 class="card-text">Increased by 60%</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
         <!-- Start Scripts Minimal to Create Page -->
         <script src="/resources/js/vendor.bundle.base.js" type="text/javascript"></script>
         <script src="/resources/js/vendor.bundle.addons.js" type="text/javascript"></script>
@@ -34,9 +55,5 @@ and open the template in the editor.
         <script src="/resources/js/todolist.js" type="text/javascript"></script>
 
         <!-- Start Scripts Minimal to Create Page -->
-        <!-- endinject -->
-        <!-- Custom js for this page-->
-        <!-- End custom js for this page-->
     </body>
-
 </html>
