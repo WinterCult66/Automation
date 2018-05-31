@@ -32,7 +32,7 @@ public class HomeController {
         @GetMapping("/")
     public String redirectHome() {
         LOG.log(Level.INFO, "Start " + TemplatesConstants.HOME + "...");
-        return TemplatesConstants.HOME;
+        return "redirect:"+TemplatesConstants.HOME;
     }
     
 
