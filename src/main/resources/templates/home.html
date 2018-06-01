@@ -26,8 +26,8 @@ and open the template in the editor.
                     <a class="navbar-brand brand-logo-mini" href="/"><img src="/resources/img/logo.svg" alt="logo"/></a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
-                <div th:replace="header :: header">                   
-                </div>
+                    <div th:replace="header :: header">                   
+                    </div>
                 </div>
             </nav> 
             <div class="container-fluid page-body-wrapper">
@@ -57,43 +57,85 @@ and open the template in the editor.
                             </nav>
                         </div>
                         <div class="row">
-                            <div class="col-md-4 stretch-card grid-margin">
-                                <div class="card bg-gradient-danger card-img-holder text-white">
-                                    <div class="card-body">
-                                        
-                                        <h4 class="font-weight-normal mb-3">kevin
-                                            <i class="mdi mdi-chart-line mdi-24px float-right"></i>
-                                        </h4>
-                                        <h2 class="mb-5">$ 15,0000</h2>
-                                        <h6 class="card-text">Increased by 60%</h6>
+                            <div class="col-lg-5 grid-margin stretch-card">
+                                <div class="card">
+                                    <div class="card-body p-0 d-flex">
+                                        <div id="inline-datepicker" class="datepicker datepicker-custom"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 stretch-card grid-margin">
-                                <div class="card bg-gradient-info card-img-holder text-white">
+
+
+                            <div class="col-lg-7 grid-margin stretch-card">
+                                <div class="card">
                                     <div class="card-body">
-                                        
-                                        <h4 class="font-weight-normal mb-3">Weekly Orders
-                                            <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
-                                        </h4>
-                                        <h2 class="mb-5">45,6334</h2>
-                                        <h6 class="card-text">Decreased by 10%</h6>
+                                        <h4 class="card-title text-white">Todo</h4>
+                                        <div class="add-items d-flex">
+                                            <input type="text" class="form-control todo-list-input"  placeholder="What do you need to do today?">
+                                            <button class="add btn btn-gradient-primary font-weight-bold todo-list-add-btn" id="add-task">Add</button>
+                                        </div>
+                                        <div class="list-wrapper">
+                                            <ul class="d-flex flex-column-reverse todo-list todo-list-custom">
+                                                <li>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="checkbox" type="checkbox">
+                                                            Meeting with Alisa
+                                                        </label>
+                                                    </div>
+                                                    <i class="remove mdi mdi-close-circle-outline"></i>
+                                                </li>
+                                                <li class="completed">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="checkbox" type="checkbox" checked>
+                                                            Call John
+                                                        </label>
+                                                    </div>
+                                                    <i class="remove mdi mdi-close-circle-outline"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="checkbox" type="checkbox">
+                                                            Create invoice
+                                                        </label>
+                                                    </div>
+                                                    <i class="remove mdi mdi-close-circle-outline"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="checkbox" type="checkbox">
+                                                            Print Statements
+                                                        </label>
+                                                    </div>
+                                                    <i class="remove mdi mdi-close-circle-outline"></i>
+                                                </li>
+                                                <li class="completed">
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="checkbox" type="checkbox" checked>
+                                                            Prepare for presentation
+                                                        </label>
+                                                    </div>
+                                                    <i class="remove mdi mdi-close-circle-outline"></i>
+                                                </li>
+                                                <li>
+                                                    <div class="form-check">
+                                                        <label class="form-check-label">
+                                                            <input class="checkbox" type="checkbox">
+                                                            Pick up kids from school
+                                                        </label>
+                                                    </div>
+                                                    <i class="remove mdi mdi-close-circle-outline"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 stretch-card grid-margin">
-                                <div class="card bg-gradient-success card-img-holder text-white">
-                                    <div class="card-body">
-                                        
-                                        <h4 class="font-weight-normal mb-3">Visitors Online
-                                            <i class="mdi mdi-diamond mdi-24px float-right"></i>
-                                        </h4>
-                                        <h2 class="mb-5">95,5741</h2>
-                                        <h6 class="card-text">Increased by 5%</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
+                        </div> 
                     </div>
                     <div th:replace="footer :: footer">                   
                     </div>
@@ -109,6 +151,7 @@ and open the template in the editor.
         <script src="/resources/js/misc.js" type="text/javascript"></script>
         <script src="/resources/js/settings.js" type="text/javascript"></script>
         <script src="/resources/js/todolist.js" type="text/javascript"></script>
+        <script src="/resources/js/dashboard.js" type="text/javascript"></script>
         <!-- Start Scripts Minimal to Create Page -->
     </body>
 
