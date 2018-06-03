@@ -14,6 +14,7 @@ and open the template in the editor.
         <link href="/resources/css/vendors/css/vendor.bundle.base.css" rel="stylesheet" type="text/css"/>
         <link href="/resources/css/vendors/css/vendor.bundle.addons.css" rel="stylesheet" type="text/css"/>
         <link href="/resources/css/style/style.css" rel="stylesheet" type="text/css"/>
+        <link href="/resources/css/style/css.css" rel="stylesheet" type="text/css"/>
         <!-- End Resoruces Minimal -->
     </head>
     <body>
@@ -21,12 +22,12 @@ and open the template in the editor.
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo" href="/"><img src="/resources/img/logo.svg" alt="logo"/></a>
-                    <a class="navbar-brand brand-logo-mini" href="/"><img src="/resources/img/logo.svg" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo" href="/"><img src="/resources/img/banner.png" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo-mini" href="/"><img src="/resources/img/banner.png" alt="logo"/></a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-stretch">
-                <div th:replace="header :: header">                   
-                </div>
+                    <div th:replace="header :: header">                   
+                    </div>
                 </div>
             </nav> 
             <div class="container-fluid page-body-wrapper">
@@ -59,11 +60,13 @@ and open the template in the editor.
                             <div class="col-md-4 stretch-card grid-margin">
                                 <div class="card bg-gradient-danger card-img-holder text-white">
                                     <div class="card-body">
-                                        
+                                        <img src="/resources/img/circle.png" class="card-img-absolute" alt="circle-image"/>
                                         <h4 class="font-weight-normal mb-3">kevin
                                             <i class="mdi mdi-chart-line mdi-24px float-right"></i>
                                         </h4>
-                                        <h2 class="mb-5">$ 15,0000</h2>
+                                        <a><i class="mdi mdi-delete-forever fontpxx"></i></a>
+                                        <i class="mdi mdi mdi-play-circle fontpxx"></i>
+                                        <i class="mdi mdi mdi-broom fontpxx"></i>
                                         <h6 class="card-text">Increased by 60%</h6>
                                     </div>
                                 </div>
@@ -71,7 +74,7 @@ and open the template in the editor.
                             <div class="col-md-4 stretch-card grid-margin">
                                 <div class="card bg-gradient-info card-img-holder text-white">
                                     <div class="card-body">
-                                        
+                                        <img src="/resources/img/circle.svg" class="card-img-absolute" alt="circle-image"/>
                                         <h4 class="font-weight-normal mb-3">Weekly Orders
                                             <i class="mdi mdi-bookmark-outline mdi-24px float-right"></i>
                                         </h4>
@@ -83,9 +86,10 @@ and open the template in the editor.
                             <div class="col-md-4 stretch-card grid-margin">
                                 <div class="card bg-gradient-success card-img-holder text-white">
                                     <div class="card-body">
-                                                      
+                                        <img src="/resources/img/circle.svg" class="card-img-absolute" alt="circle-image"/>
                                         <h4 class="font-weight-normal mb-3">Visitors Online
                                             <i class="mdi mdi-diamond mdi-24px float-right"></i>
+
                                         </h4>
                                         <h2 class="mb-5">95,5741</h2>
                                         <h6 class="card-text">Increased by 5%</h6>

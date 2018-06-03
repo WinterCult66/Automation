@@ -35,5 +35,11 @@ public class HomeController {
         return "redirect:"+TemplatesConstants.HOME;
     }
     
+            @GetMapping("/login")
+    public String login() {
+        LOG.log(Level.INFO, "Start " + TemplatesConstants.LOGIN + "...");
+        return TemplatesConstants.LOGIN;
+    }
+    
 
 }

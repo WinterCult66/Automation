@@ -10,8 +10,9 @@ package com.emidad.automation.constants;
  * @author Permafrost
  */
 public class TemplatesConstants {
-    
-   public static final String HOME = "home";
-   public static final String CREATETEST = "createtest";
-    
+
+    public static final String HOME = "home";
+    public static final String CREATETEST = "createtest";
+    public static final String LOGIN = "login";
+
 }
