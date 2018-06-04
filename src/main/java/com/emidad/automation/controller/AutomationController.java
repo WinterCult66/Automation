@@ -22,9 +22,15 @@ public class AutomationController {
     private static final Logger LOG = LogManager.getLogger(HomeController.class);
 
     @GetMapping("/createtest")
-    public String home() {
+    public String createtest() {
         LOG.log(Level.INFO, "Start createtest" + "...");
         return TemplatesConstants.CREATETEST;
+    }
+
+    @GetMapping("/showtest")
+    public String showtest() {
+        LOG.log(Level.INFO, "Start " + TemplatesConstants.SHOWTEST + "...");
+        return TemplatesConstants.SHOWTEST;
     }
 
 }

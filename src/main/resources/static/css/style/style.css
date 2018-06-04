@@ -27542,7 +27542,7 @@ body.avgrund-active {
 
 /* Js-grid */
 .jsgrid .jsgrid-button {
-  background-image: url(../images/sprites/jsgrid-icons.png);
+  background-image: url(/resources/img/jsgrid-icons.png);
 }
 
 .jsgrid .jsgrid-grid-header {
